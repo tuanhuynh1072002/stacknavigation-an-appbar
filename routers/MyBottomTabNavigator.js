@@ -8,13 +8,15 @@ const Tab = createBottomTabNavigator();
 const MyBottomTabNavigator = () =>{
     return(
         <Tab.Navigator>
-            <Tab.Screen name='Home' component={HomeScreen} 
+            <Tab.Screen name='home' component={HomeScreen} 
             options={{
+                title:'Home',
                 tabBarIcon:({color}) => <Icon source={"home"} color='black' size={30} {...color}/>
             }}
             />
-            <Tab.Screen name='Detail' component={DetailsScreen}
+            <Tab.Screen name='detail' component={DetailsScreen}
             options={{
+                title:'Detail',
                 tabBarIcon:({color}) => <Icon source={"star"} color='black' size={30} {...color}/>
             }}
             />
